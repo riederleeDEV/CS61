@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Prime",
+            "request": "launch",
+            "mainClass": "Prime"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Primes",
+            "request": "launch",
+            "mainClass": "Primes"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - concat",
+            "request": "launch",
+            "mainClass": "concat",
+            "projectName": "CS61B_63701012"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "CS61B_63701012"
+        }
+    ]
+}

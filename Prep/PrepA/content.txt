@@ -1,0 +1,11 @@
+Basic Java Operations:
+
+1. Syntax
+2. Comment
+3. Variables
+4. Strings
+5. Math
+6. if else 
+7. Loop
+8. Break Continue
+9. Array

@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ShadowTest",
+            "request": "launch",
+            "mainClass": "ShadowTest",
+            "projectName": "CS61B_63701012"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Circle",
+            "request": "launch",
+            "mainClass": "Circle",
+            "projectName": "CS61B_63701012"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Prime",
             "request": "launch",
             "mainClass": "Prime"

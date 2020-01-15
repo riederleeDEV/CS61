@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Flatten",
+            "request": "launch",
+            "mainClass": "Flatten",
+            "projectName": "CS61B_63701012"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ShadowTest",
             "request": "launch",
             "mainClass": "ShadowTest",

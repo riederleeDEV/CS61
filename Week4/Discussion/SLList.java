@@ -4,6 +4,10 @@ public class SLList {
         public int item;
         public IntNode next;
 
+        public IntNode(){
+
+        }
+
         public IntNode(int item, IntNode next) {
             this.item = item;
             this.next = next;
@@ -17,13 +21,14 @@ public class SLList {
     private IntNode first;
     private int size;
 
-    
-
+    // Always add new element in the first place
 
     public void addFirst(int x) {
         first = new IntNode(x, first);
         size++;
     }
+
+    // Print Node data
 
     public void printNodeData(){
         IntNode thisNode = this.first;
@@ -33,6 +38,8 @@ public class SLList {
             thisNode = thisNode.getNextNode();
         }
     }
+
+    // Insert new  element in linked list
 
     public void insert(int data, int x){
         if(x > 0 && x < size){
@@ -62,17 +69,47 @@ public class SLList {
         }
     }
 
+    // Return the size of the linked list
+
     public int returnSize(){
         return size;
     }
+
+    // Reverse linked list
+
+    public void reverse(){
+        if(first==null || first.next == null){
+            return;
+        } else {
+            
+            
+            IntNode ptr = first.next;
+            first.next = null;
+
+            while(ptr != null){
+                IntNode temp = ptr.next;
+                ptr.next = first;
+                first = ptr;
+                ptr = temp;
+            }
+
+
+
+
+
+        }
+    }
+
+    // Run the test case in main function
 
     public static void main(String[] args){
         SLList list = new SLList();
         list.addFirst(5);
         list.addFirst(10);
         list.addFirst(2);
-        System.out.println(list.returnSize());
         list.insert(100, 100);
+        System.out.println(list.returnSize());
+        list.reverse();
         list.printNodeData();
     }
 }

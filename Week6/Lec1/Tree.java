@@ -15,7 +15,7 @@ public class Tree{
 
     public static String preorder(Node node, String traversal){
 
-        if (Integer.toString(node.value)!=null){
+        if (node != null){
             traversal += Integer.toString(node.value) + "-";
             traversal = preorder(node.left, traversal);
             traversal = preorder(node.right, traversal);
@@ -25,6 +25,37 @@ public class Tree{
 
         
     }
+
+    // Postorder printing
+
+    public static String postorder(Node node, String traversal){
+
+        if (node != null){
+            traversal = postorder(node.left, traversal);
+            traversal = postorder(node.right, traversal);
+            traversal += Integer.toString(node.value) + "-";
+        } 
+
+        return traversal;
+
+        
+    }
+
+    // Inorder printing
+
+    public static String inorder(Node node, String traversal){
+
+        if (node != null){
+            traversal = inorder(node.left, traversal);
+            traversal += Integer.toString(node.value) + "-";
+            traversal = inorder(node.right, traversal);
+        } 
+
+        return traversal;
+
+        
+    }
+
 
     public static void main(String[] args){
        
@@ -49,6 +80,8 @@ public class Tree{
         */
 
         System.out.println(preorder(tree.root, " "));
+        System.out.println(postorder(tree.root, " "));
+        System.out.println(inorder(tree.root, " "));
     }
 
   
